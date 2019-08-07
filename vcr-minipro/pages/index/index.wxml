@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<view class="{{showView?'view_hide':'view_show'}}">
+  <view class="container">
+    <button bindtap='chooseImage'>扫名片</button>
+  </view>
+</view>
+<!-- <view class="{{showView?'view_show':'view_show'}}">
+  <view class="title-text">已识别信息您可点击修改</view>
+  <view class="title-text">请您确认无误后点击提交</view>
+</view> -->
+<image style='width:300px;height:170px;margin-left:10px' src='{{imageSrc}}'></image>
+<view class="{{showView?'view_show':'view_hide'}}">
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">姓名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input text-more" value='{{name}}' name="name" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">公司</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input text-more" value='{{company}}' name="company" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">部门</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input text-more" value='{{department}}' name="department" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">职位</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input text-more" value='{{title}}' name="title" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label text-more">手机</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input text-more" value='{{tel_cell}}' name="tel_cell" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label text-more">座机</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input text-more" value='{{tel_work}}' name="tel_work" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">地址</view>
+      </view>
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" value='{{addr}}' name="addr" disabled='true' />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">邮箱</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input text-more" value='{{email}}' name="email" />
+      </view>
+    </view>
+  </view>
+</view>
